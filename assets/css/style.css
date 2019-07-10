@@ -1,0 +1,222 @@
+body {
+    font-size: 16px;
+    color: #333333;
+    background-color: rgb(239, 240, 243);
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(31, 79, 133, 0.3);
+}
+
+.slides-navigation {
+    z-index: 6;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+    background-image: url(../img/icons/back.png);
+}
+
+.slides-navigation a.next {
+    right: 20px;
+    background-image: url(../img/icons/next.png);
+}
+
+.titleMessage {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.titleMessage .heading p {
+    color: #ffffff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+
+}
+
+.titleMessage .heading .main { 
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.titleMessage .heading .sub { 
+    font-size: 25px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.aboutImage {
+    max-width: 100%;
+    /*border: 16px solid #131313;*/
+}
+
+.skillsSection, .contactSection {
+    background-color: hsl(160, 90%, 30%);
+    color: #ffffff;
+}
+
+.statsSection {
+    background-color: hsl(0, 22%, 93%);
+}
+
+.skill {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.chart {
+    position: relative;
+    width:  152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent{
+    color: #222222;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.chart .percent:after{
+    content: ' anos';
+}
+
+.squareItem {
+    margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #444444;
+    border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 2px solid #444444;
+}
+
+.squareInnerContainer:before {
+    right: 0px;
+}
+
+.squareInnerContainer:after {
+    left: 0px;
+}
+
+.squareContent h2 {
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: hsl(219, 82%, 31%);
+}
+
+.squareContent h3 {
+    font-size: 13px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.squareIcon {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #444444;
+}
+
+.contactButton {
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+}
+
+.contactButton:hover {
+    text-decoration: none;
+    color: hsl(160, 90%, 30%);
+    background-color: #ffffff;
+}
+
+.copyrightSection {
+    background-color: hsl(212, 79%, 38%);
+    color: #ffffff;
+    padding: 30px 5px;
+}
+
+.copyrightSection p {
+    margin: 0;
+}
+
+#navigation {
+    background-color: hsl(160, 90%, 30%); 
+    padding: 10px 5px;
+    width: 100%;
+    z-index: 100;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #ffffff;
+}
+
+#navigation .navbar-brand {
+    color: #ffffff;
+    padding-left: 0.7em;
+}
+
+.toogle-icon {
+    color: #ffffff;
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
