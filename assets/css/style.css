@@ -72,12 +72,11 @@ body {
 }
 
 .skillsSection, .contactSection {
-    background-color: #13b5dd;
+    background-color: hsl(189, 81%, 41%);
     color: #ffffff;
 }
 
 .statsSection {
-    background-color: hsl(0, 22%, 93%);
 }
 
 .skill {
@@ -175,7 +174,7 @@ body {
 
 .contactButton:hover {
     text-decoration: none;
-    color: hsl(160, 90%, 30%);
+    color: hsl(197, 91%, 30%);
     background-color: #ffffff;
 }
 
@@ -190,7 +189,7 @@ body {
 }
 
 #navigation {
-    background-color: #13b5dd; 
+    background-color: hsl(199, 62%, 25%); 
     padding: 10px 5px;
     width: 100%;
     z-index: 100;
