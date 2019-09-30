@@ -7,7 +7,7 @@ $("document").ready(function() {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Desenvolvimento Web", "Desenvolvimento Mobile"],
+        strings: ["Desenvolvimento Web", "Desenvolvimento Mobile", "Desenvolvimento Web"],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
