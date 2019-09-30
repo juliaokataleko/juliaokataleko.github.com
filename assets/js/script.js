@@ -7,7 +7,7 @@ $("document").ready(function() {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Desenvolvedor Web", "Desenvolder Mobile", "Programação Desktop"],
+        strings: ["Desenvolvimento Web", "Desenvolvimento Mobile"],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
