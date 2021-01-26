@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+
+    line-height: 1.8;
+
+    transition: background 0.3s linear, color 0.3s linear ;
+}
+
+
+body.dark {
+    background-color: #111111;
+    color: #ffffff;
+   
+}
+
+body.dark label{
+    background-color: #ffffff;
+}
+
+body.dark .sidebar{
+    background-color: #1f2122;
+}
+
+label {
+    border-radius: 10%;
+    user-select: none;
+    cursor: pointer;
+    background-color: #1f2022;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    transition: background 0.3s linear;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+}
+
+input {
+    visibility: hidden;
+}
+
+h1 {
+    font-size: 30pt;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.sidebar {
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(237, 240, 243);
+    padding: 2em;
+    overflow-y: auto;
+}
+
+.content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    height: calc(100% - 8em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.content-header {
+    height: 4em;
+    line-height: 4em;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0 1em;
+}
+
+body.dark .content-header {
+    background-color: #18191a;
+}
+
+.content-footer {
+    line-height: 4em;
+    height: 4em;
+    background-color: #d7dbe2;
+    width: 100%;
+    text-align: center;
+}
+
+.menu {
+    background: transparent;
+    border: none;
+    color: rgb(210, 213, 216);
+    font-size: 40px;
+    cursor: pointer;
+    padding-top: 4px;
+    transition: transform 0.3s ease-in-out;
+    outline: none;
+}
+
+.contact-btn {
+    padding: 10px; border-radius: 10px; border: 4px solid #444;
+    text-decoration: none;
+    margin: 3px auto;
+    font-weight: bold;
+    color: #444; 
+    padding: 0.5em 2em;
+}
+
+body.dark .content-footer {
+    background-color: #18191a;
+}
+
+#img-container {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+
+img {
+    transform-origin: center center;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* rain */
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s forwards;
+    font-size: 2rem;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+.skill {
+    border: 2px solid #515253;
+    background: #ffffff;
+    color: black;
+    font-size: 18pt;
+    padding: 0.4em;
+    border-radius: 10px;
+}
+
+body.dark .skill {
+    border: 2px solid #fdfdfd;
+    background: #1e1f20;
+    color: rgb(250, 250, 250);
+    font-size: 18pt;
+    padding: 0.4em;
+    border-radius: 10px;
+}
+
+/* Popup Contact */
+
+
+.popup-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup-container.active {
+    display: flex;
+}
+
+.popup {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 2PX;
+    box-shadow: 2PX 2PX 10PX rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+body.dark .popup {
+    background-color: #1e2020;
+    color: #ffffff !important;
+}
+
+body.dark .popup-container {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.popup button {
+    background-color: #fff;
+    color: #444;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#close {
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 601px) {
+    #btn {
+        display: none;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #btn {
+        display: inline-block;
+    }
+}
