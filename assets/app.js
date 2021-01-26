@@ -35,6 +35,8 @@ function writeText(){
     index++;
 
     if (index > text.length) {
+        setTimeout(()=>{
+        }, 3000);
         index = 0;
     }
 }
@@ -81,4 +83,29 @@ open.addEventListener("click", () => {
 
 close.addEventListener("click", () => {
     container.classList.remove("active")
+})
+
+const btn = document.getElementById('btn')
+const sidebar = document.getElementById('sidebar')
+const content = document.getElementById('content')
+
+let menu_active = false
+
+btn.addEventListener('click', ()=> {
+
+    if(menu_active) {
+        
+        sidebar.style.width = "0%"
+        sidebar.style.display = "none"
+        content.style.width = "100%"
+        content.style.display = "inline-block"
+
+    } else {
+        sidebar.style.width = "100%"
+        sidebar.style.display = "inline-block"
+        content.style.width = "0%"
+        content.style.display = "none"
+    }
+
+    menu_active = !menu_active
 })

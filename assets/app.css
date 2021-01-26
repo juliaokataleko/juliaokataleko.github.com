@@ -120,11 +120,15 @@ body.dark .content-header {
     background: transparent;
     border: none;
     color: rgb(210, 213, 216);
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
-    padding-top: 4px;
     transition: transform 0.3s ease-in-out;
     outline: none;
+    position: fixed;
+    top: 12px;
+    left: 10px;
+
+    z-index: 10000000000000;
 }
 
 .contact-btn {
@@ -255,6 +259,7 @@ body.dark .popup-container {
 @media screen and (max-width: 600px) {
     .sidebar {
         display: none;
+        padding-top: 5em;
     }
 
     .content {
